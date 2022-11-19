@@ -5,44 +5,52 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import supports.WebUI;
 
-public class LoginPage {
-    private WebDriver driver;
-    private WebUI webUI;
+public class MyAccount_Login {
 
-    public LoginPage(WebDriver _driver){
+    private WebDriver driver;
+
+    private  WebUI webUI;
+
+    public MyAccount_Login(WebDriver _driver){
         driver = _driver;
         webUI = new WebUI(driver);
     }
 
-    //===============================================================================================
     By usernameTxt = By.id("username");
-    By passwordTxt = By.id("password");
-    By loginBtn = By.xpath("//button[@type='submit']");
-    By verifyLoginLbl = By.xpath("//div[@id='flash']");
-    By logoutBtn = By.xpath("//a[@class='button secondary radius']");
 
-    //===============================================================================================
+    By passwordTxt = By.id("password");
+
+    By loginBtn = By.xpath("//input[@name='login']");
+
+    By verifyLoginLbl = By.xpath("//p[contains(text(),'Hello')]");
+
+    By logoutBtn = By.xpath("//a[normalize-space()='Sign out']");
+
     public void getURL(String url){
         driver.get(url);
         webUI.waitForPageLoaded();
     }
+
     public void enterUsername(String username){
         webUI.setText(usernameTxt, username);
     }
+
     public void enterPassword(String password){
         webUI.setText(passwordTxt, password);
     }
-    public void clickLogin(){
+
+    public void ClickLogin(){
         webUI.clickElement(loginBtn);
     }
-    public void clickLogout(){
+
+    public void ClickLogout(){
         webUI.clickElement(logoutBtn);
     }
 
     public void verifyLogin(String msg, String option){
         switch (option){
-            case "1": //happy case 
-                Assert.assertEquals(webUI.getElement(verifyLoginLbl).getText().trim().substring(0,30), msg.trim());
+            case "1": //happy case
+                Assert.assertEquals(webUI.getElement(verifyLoginLbl).getText().trim().substring(0,5), msg.trim());
                 break;
             case "2": //invalid username
                 Assert.assertEquals(webUI.getElement(verifyLoginLbl).getText().substring(0,25), msg.trim());
