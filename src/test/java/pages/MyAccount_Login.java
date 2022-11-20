@@ -22,7 +22,9 @@ public class MyAccount_Login {
 
     By loginBtn = By.xpath("//input[@name='login']");
 
-    By verifyLoginLbl = By.xpath("//p[contains(text(),'Hello')]");
+    By verifyLogin_Sucsessfull = By.xpath("//p[contains(text(),'Hello')]");
+
+    By verifyLogin_Error = By.xpath("//strong[normalize-space()='Error']");
 
     By logoutBtn = By.xpath("//a[normalize-space()='Sign out']");
 
@@ -50,16 +52,16 @@ public class MyAccount_Login {
     public void verifyLogin(String msg, String option){
         switch (option){
             case "1": //happy case
-                Assert.assertEquals(webUI.getElement(verifyLoginLbl).getText().trim().substring(0,5), msg.trim());
+                Assert.assertEquals(webUI.getElement(verifyLogin_Sucsessfull).getText().trim().substring(0,5), msg.trim());
                 break;
             case "2": //invalid username
-                Assert.assertEquals(webUI.getElement(verifyLoginLbl).getText().substring(0,25), msg.trim());
+                Assert.assertEquals(webUI.getElement(verifyLogin_Error).getText().substring(0,5), msg.trim());
                 break;
             case "3": //invalid password
-                Assert.assertEquals(webUI.getElement(verifyLoginLbl).getText().substring(0,30), msg.trim());
+                Assert.assertEquals(webUI.getElement(verifyLogin_Error).getText().substring(0,5), msg.trim());
                 break;
             default: //blank
-                Assert.assertEquals(webUI.getElement(verifyLoginLbl).getText().substring(0,30), msg.trim());
+                Assert.assertEquals(webUI.getElement(verifyLogin_Sucsessfull).getText().substring(0,30), msg.trim());
                 break;
         }
     }

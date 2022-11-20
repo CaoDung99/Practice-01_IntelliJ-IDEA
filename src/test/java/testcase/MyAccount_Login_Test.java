@@ -23,8 +23,26 @@ public class MyAccount_Login_Test extends BaseTest{
         login.enterUsername("caotrandung99@gmail.com");
         login.enterPassword("caotrandung");
         login.ClickLogin();
-        
+        login.verifyLogin("Hello", "1");
         login.ClickLogout();
     }
 
+    @Test (priority = 2, description = "TC2_Dang nhap sai username")
+    public void TC2_Login(){
+        login.getURL("https://practice.automationtesting.in/my-account/");
+        login.enterUsername("....");
+        login.enterPassword("caotrandung");
+        login.ClickLogin();
+        login.verifyLogin("Error", "2");
+
+    }
+
+    @Test (priority = 3, description = "TC3_Dang nhap sai password")
+    public  void TC3_Login(){
+        login.getURL("https://practice.automationtesting.in/my-account/");
+        login.enterUsername("caotrandung99@gmail.com");
+        login.enterPassword("....");
+        login.ClickLogin();
+        login.verifyLogin("Error", "3");
+    }
 }
