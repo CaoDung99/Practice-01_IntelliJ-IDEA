@@ -24,7 +24,7 @@ public class MyAccount_Login {
 
     By verifyLogin_Sucsessfull = By.xpath("//p[contains(text(),'Hello')]");
 
-    By verifyLogin_Error = By.xpath("//strong[normalize-space()='Error']");
+    By verifyLogin_Error = By.xpath("//strong[normalize-space()='Error:']");
 
     By logoutBtn = By.xpath("//a[normalize-space()='Sign out']");
 
@@ -60,6 +60,8 @@ public class MyAccount_Login {
             case "3": //invalid password
                 Assert.assertEquals(webUI.getElement(verifyLogin_Error).getText().substring(0,5), msg.trim());
                 break;
+            case "4": // empty password
+                Assert.assertEquals(webUI.getElement(verifyLogin_Error).getText().substring(0,5), msg.trim());
             default: //blank
                 Assert.assertEquals(webUI.getElement(verifyLogin_Sucsessfull).getText().substring(0,30), msg.trim());
                 break;

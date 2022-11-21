@@ -45,4 +45,13 @@ public class MyAccount_Login_Test extends BaseTest{
         login.ClickLogin();
         login.verifyLogin("Error", "3");
     }
+
+    @Test (priority = 4, description = "TC4_ Dang nhap trong password")
+    public  void TC4_Login(){
+        login.getURL("https://practice.automationtesting.in/my-account/");
+        login.enterUsername("caotrandung99@gmail.com");
+        login.enterPassword("");
+        login.ClickLogin();
+        login.verifyLogin("Error: Password is required.", "4");
+    }
 }

@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e4554ce-a1de-40af-8d8c-2361dafd0634" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/screenshots/TC4_Login.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/TC1_Login.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/TC1_Login.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/screenshots/TC2_Login.png" beforeDir="false" afterPath="$PROJECT_DIR$/screenshots/TC2_Login.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/MyAccount_Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/MyAccount_Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testcase/MyAccount_Login_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/MyAccount_Login_Test.java" afterDir="false" />
     </list>
@@ -30,46 +29,31 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2HZMANmR4N9K4TswK5BwhxZBCUp" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/dungc/IdeaProjects/Demo&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/dungc/IdeaProjects/Demo",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
-}</component>
-  <component name="RunManager" selected="TestNG.MyAccount_Login_Test.TC3_Login">
+}]]></component>
+  <component name="RunManager" selected="TestNG.MyAccount_Login_Test.TC4_Login">
     <configuration name="C:/Users/caotr/git/Practice-01_IntelliJ-IDEA/src/test/java/xml/LoginTest.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Practice-01_IntelliJ-IDEA" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/xml/LoginTest.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest.TC2_Login" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Practice 01" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcase.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testcase" />
-      <option name="MAIN_CLASS_NAME" value="testcase.LoginTest" />
-      <option name="METHOD_NAME" value="TC2_Login" />
-      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -130,13 +114,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyAccount_Login_Test.TC4_Login" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Practice-01_IntelliJ-IDEA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcase.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcase" />
+      <option name="MAIN_CLASS_NAME" value="testcase.MyAccount_Login_Test" />
+      <option name="METHOD_NAME" value="TC4_Login" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.MyAccount_Login_Test.TC4_Login" />
         <item itemvalue="TestNG.MyAccount_Login_Test.TC3_Login" />
         <item itemvalue="TestNG.MyAccount_Login_Test.TC2_Login" />
         <item itemvalue="TestNG.MyAccount_Login_Test.TC1_Login" />
         <item itemvalue="TestNG.C:/Users/caotr/git/Practice-01_IntelliJ-IDEA/src/test/java/xml/LoginTest.xml" />
-        <item itemvalue="TestNG.LoginTest.TC2_Login" />
       </list>
     </recent_temporary>
   </component>
@@ -161,6 +163,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
