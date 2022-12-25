@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e4554ce-a1de-40af-8d8c-2361dafd0634" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/screenshots/TC2_Registed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/screenshots/TC4_Registed.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/MyAccount_Registration_Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/testcase/MyAccount_Registration_Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/TryTestingPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testcase/Dropdown_Radio_Checkbox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/testcase/Elements.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/MyAccount_Login_Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/MyAccount_Login_Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,8 +49,8 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.MyAccount_Registration_Test.TC4_Registed">
-    <configuration name="MyAccount_Login_Test.TC4_Login" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="MyAccount_Registration_Test" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Practice-01_IntelliJ-IDEA" />
       <extension name="coverage">
         <pattern>
@@ -61,9 +59,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testcase" />
-      <option name="MAIN_CLASS_NAME" value="testcase.MyAccount_Login_Test" />
-      <option name="METHOD_NAME" value="TC4_Login" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="MAIN_CLASS_NAME" value="testcase.MyAccount_Registration_Test" />
+      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -144,11 +141,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.MyAccount_Registration_Test" />
         <item itemvalue="TestNG.MyAccount_Registration_Test.TC4_Registed" />
         <item itemvalue="TestNG.MyAccount_Registration_Test.TC3_Registed" />
         <item itemvalue="TestNG.MyAccount_Registration_Test.TC2_Registed" />
         <item itemvalue="TestNG.MyAccount_Registration_Test.TC1_Registed" />
-        <item itemvalue="TestNG.MyAccount_Login_Test.TC4_Login" />
       </list>
     </recent_temporary>
   </component>
