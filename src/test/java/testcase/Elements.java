@@ -8,6 +8,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.locators.RelativeLocator;
 
+import org.testng.Assert;
+
+
 import java.time.Duration;
 import java.util.List;
 
@@ -36,17 +39,18 @@ public class Elements {
 
         driver.findElement(By.cssSelector("#fname")).sendKeys("Cao Trần Dũng");
         */
-        driver.navigate().to("https://opensource-demo.orangehrmlive.com/");
-        WebElement loginbuton = driver.findElement(By.id("btnlogin"));
 
-        driver.findElement(RelativeLocator.with(By.tagName("input")).above(loginbuton)).sendKeys("ABCD");
+        /*
+        driver.navigate().to("https://www.spicejet.com/");
+        Assert.assertFalse(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
+        System.out.println(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
+        */
 
-        Thread.sleep(2000);
+        driver.navigate().to("https://www.spicejet.com/");
+        Assert.assertFalse(true);
+        System.out.println(driver.findElement(By.cssSelector("input[id*='SeniorCitizenDiscount']")).isSelected());
 
-        
 
 
-        driver.close();
-        driver.quit();
     }
 }

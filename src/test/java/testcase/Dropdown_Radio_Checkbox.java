@@ -5,6 +5,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+import org.testng.Assert;
 import supports.WebUI;
 
 import java.time.Duration;
@@ -46,6 +48,8 @@ public class Dropdown_Radio_Checkbox {
         }
 
          */
+
+        /*
         // Lấy 1 radio cụ thể
         Boolean Radio = driver.findElement(By.name("gender")).isSelected();
 
@@ -64,6 +68,18 @@ public class Dropdown_Radio_Checkbox {
             System.out.println("itemCheckbox.isSelected() = " + itemRadio.getSize());
 
         }
+
+         */
+
+        Select select = new Select(driver.findElement(By.id("option")));
+        // Chọn option theo gia trị bên trong
+        // select.selectByVisibleText("Option 3");
+        // Chọn option theo vị trí
+        // select.selectByIndex(1);
+        Assert.assertFalse(select.isMultiple());
+        Assert.assertEquals(3, select.getOptions().size());
+        Assert.assertEquals("Option 1", select.getFirstSelectedOption().getText());
+        System.out.println("Thành công");
 
     }
 
