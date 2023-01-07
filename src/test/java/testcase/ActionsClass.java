@@ -6,8 +6,7 @@ import org.testng.annotations.BeforeClass;
 
 public class ActionsClass extends BaseTest {
 
-    @BeforeClass
-    ActionsClass
+
 
 
 
